@@ -1,0 +1,22 @@
+{
+  "name": "mkbool",
+  "version": "1.0.0",
+  "description": "Convert any value to boolean true ot false",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m3alamin/mkbool.git"
+  },
+  "keywords": [
+    "boolean"
+  ],
+  "author": "MD AL AMIN <m3alamin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m3alamin/mkbool/issues"
+  },
+  "homepage": "https://github.com/m3alamin/mkbool#readme"
+}
