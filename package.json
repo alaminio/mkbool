@@ -1,7 +1,7 @@
 {
   "name": "mkbool",
-  "version": "1.0.0",
-  "description": "Convert any value to boolean true ot false",
+  "version": "1.0.1",
+  "description": "Convert any value to boolean true or false",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
