@@ -8,7 +8,7 @@ Convert any value to boolean
 
 ## Getting started
 
-1. Install the package `npm i mkbool`
+1. Install the package `npm i mkbool` or `npm i mkbool@beta`
 1. Require to your script `var mkbool = require('mkbool');`
 1. And use it `var isBool = mkbool('any value or variable')`
 
