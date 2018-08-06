@@ -6,7 +6,7 @@ module.exports = (value) => {
     }
 
     // check value is Nan
-    if ( 'string' !== typeof value && isNaN(value)) {
+    if ( 'number' === typeof value && isNaN(value)) {
         return false;
     }
 
@@ -28,7 +28,7 @@ module.exports = (value) => {
 
     // check if value is an object
     if ( 'object' === typeof value ) {
-        return Object.keys(obj).length !== 0;
+        return Object.keys(value).length !== 0;
     }
 
     return !!value;

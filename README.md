@@ -25,3 +25,10 @@ Convert any value to boolean
 * Empty string `''`
 * String `'any string'`
 * And more
+
+## Test
+
+test.js is initialized with several values which will go through each value and return mkbool type.
+Run `npm test` to test. Change values on test.js to test your values.
+
+Standard test will be added later.
