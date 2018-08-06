@@ -1,6 +1,6 @@
 {
   "name": "mkbool",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Convert any value to boolean true or false",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,14 @@
     "url": "git+https://github.com/m3alamin/mkbool.git"
   },
   "keywords": [
-    "boolean"
+    "boolean",
+    "object",
+    "array",
+    "type",
+    "true",
+    "false",
+    "value",
+    "check"
   ],
   "author": "MD AL AMIN <m3alamin@gmail.com>",
   "license": "MIT",
