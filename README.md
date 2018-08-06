@@ -8,22 +8,22 @@ Convert any value to boolean
 
 ## Getting started
 
-1. Install the package `npm i mkbool`
+1. Install the package `npm i mkbool` or `npm i mkbool@beta`
 1. Require to your script `var mkbool = require('mkbool');`
 1. And use it `var isBool = mkbool('any value or variable')`
 
 ## mkbool is able to check types of
 
-* Infinity number `5/0`
-* NaN
-* Integer number
-* Floating number
-* Empty Array `[]`
-* Array with item `[1, 2, 0, ...]`
-* Empty Object `{}`
-* Object with item `{key: 'value'}`
-* Empty string `''`
-* String `'any string'`
+* Infinity number `5/0` `return false`
+* NaN `return false`
+* Integer number `return true`
+* Floating number `return true`
+* Empty Array `[]` `return false`
+* Array with item `[1, 2, 0, ...]` `return true`
+* Empty Object `{}` `return false`
+* Object with item `{key: 'value'}` `return true`
+* Empty string `''` `return false`
+* String `'any string'` `return true`
 * And more
 
 ## Test

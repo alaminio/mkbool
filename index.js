@@ -1,35 +1,51 @@
-module.exports = (value) => {
+const _ = require('lodash');
 
-    // check null or undefined
-    if ( 0 === value || null === value || 'undefined' === typeof value ) {
-        return false;
+exports = module.exports = (value) => {
+  // Undefined
+  if (_.isUndefined(value)) {
+    return false;
+  }
+
+  // Null
+  if (_.isNull(value)) {
+    return false;
+  }
+
+  // Boolean
+  if (_.isBoolean(value)) {
+    return value;
+  }
+
+  // Number
+  if (_.isNumber(value)) {
+
+    // NaN
+    if (_.isNaN(value)) {
+      return false;
     }
 
-    // check value is Nan
-    if ( 'number' === typeof value && isNaN(value)) {
-        return false;
+    // Infinite
+    if (!_.isFinite(value)) {
+      return false;
     }
 
-    // check is isFinite
-    if ( 'number' === typeof value && !isFinite(value) ) {
-        return false;
+    if (0 === value) {
+      return false;
     }
 
-    // check if value is an number
-    if ( 'number' === typeof value ) {
-        return true;
-    }
+    return true;
+  }
 
-    // check if value is an array
-    if ( Array.isArray(value) ) {
-        // If array has item return true or return false
-        return !!value.length;
-    }
+  // Array
+  if (_.isArray(value)) {
+    return !!value.length;
+  }
 
-    // check if value is an object
-    if ( 'object' === typeof value ) {
-        return Object.keys(value).length !== 0;
-    }
+  // Object
+  if (_.isObject(value)) {
+    return Object.keys(value).length !== 0;
+  }
 
-    return !!value;
-};
+  // Uncaught value
+  return !!value;
+}

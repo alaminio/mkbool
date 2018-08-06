@@ -1,6 +1,6 @@
 {
   "name": "mkbool",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Convert any value to boolean true or false",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/m3alamin/mkbool/issues"
   },
-  "homepage": "https://github.com/m3alamin/mkbool#readme"
+  "homepage": "https://github.com/m3alamin/mkbool#readme",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
 }
